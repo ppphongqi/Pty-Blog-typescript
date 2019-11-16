@@ -7,6 +7,8 @@ import history from '../history';
 import { devToolsWarning } from '../tools/tools'
 
 import AutoBackToTop from '../components/common/AutoBackToTop/AutoBackToTop';
+import Header from '../components/common/Header/Header';
+
 
 class Layouts extends Component{
 
@@ -27,7 +29,9 @@ class Layouts extends Component{
                 <AutoBackToTop>
                     <div className={_classnames(
                         isGray ? 'full_site_gray' : '', 'content' )}
-                    > Welcome Back! </div>
+                    >
+                        <Header />
+                    </div>
                 </AutoBackToTop>
             </Router>
         )
