@@ -8,7 +8,7 @@ import { devToolsWarning } from '../tools/tools'
 
 import AutoBackToTop from '../components/common/AutoBackToTop/AutoBackToTop';
 import Header from '../components/common/Header/Header';
-
+import ScrollToTop from '../components/Widget/ScrollToTop/ScrollToTop';
 
 class Layouts extends Component{
 
@@ -32,6 +32,7 @@ class Layouts extends Component{
                     >
                         <Header />
                     </div>
+                    <ScrollToTop />
                 </AutoBackToTop>
             </Router>
         )
