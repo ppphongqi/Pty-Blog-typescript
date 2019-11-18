@@ -8,7 +8,9 @@ import { devToolsWarning } from '../tools/tools'
 
 import AutoBackToTop from '../components/common/AutoBackToTop/AutoBackToTop';
 import Header from '../components/common/Header/Header';
+import Routers from '../Routers';
 import ScrollToTop from '../components/Widget/ScrollToTop/ScrollToTop';
+// import Loading from '../components/common/Loading/Loading';
 
 class Layouts extends Component{
 
@@ -31,6 +33,8 @@ class Layouts extends Component{
                         isGray ? 'full_site_gray' : '', 'content' )}
                     >
                         <Header />
+                        <Routers />
+                        <div>咋回事啊,小老弟</div>
                     </div>
                     <ScrollToTop />
                 </AutoBackToTop>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import _ from 'lodash';
 import _classnames from 'classnames';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss'
 import { svgSprite } from '../../../constants/constants';
