@@ -1,4 +1,5 @@
 import React , {Component} from 'react';
+// import { observer, inject } from 'mobx-react';
 import '@assets/styles/global.scss';
 import _classnames from 'classnames';
 import {Router} from 'react-router-dom';
@@ -12,7 +13,14 @@ import Routers from '../Routers';
 import ScrollToTop from '../components/Widget/ScrollToTop/ScrollToTop';
 // import Loading from '../components/common/Loading/Loading';
 
-class Layouts extends Component{
+// import { LayoutProps } from '../types/layouts';
+
+// import stores from '../stores/index';
+
+
+// @inject('layoutStore')
+// @observer
+class Layouts extends Component<{},{}> {
 
 
     constructor(props : any ) {

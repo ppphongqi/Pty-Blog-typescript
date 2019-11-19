@@ -50,7 +50,7 @@
       content: '';
       width: 0;
       height: 4px;
-      background: #ffa500;
+      background: pink;
       bottom: 0;
       left: 0;
       transition: all 300ms ease;
@@ -67,7 +67,7 @@
       fill: #666666;
       transition: all 500ms linear;
       &:hover{
-          fill:	#FFD700;
+          fill:	pink;
       }
     }
     .wrraper {
@@ -88,9 +88,9 @@
             transition: all 500ms linear;
         }
         &:hover {
-            color: #ffa500;
+            color: pink;
             > .header_icon {
-              fill: #ffa500;
+              fill: pink;
             }
         }
         &:hover > .icon_home {

@@ -15,7 +15,7 @@ class Title extends React.Component<ITitleProps ,{}>{
         const { title } = this.props
         return (
             <Helmet>
-                <title>{title} || Pty.xyz </title>
+                <title>{title}</title>
             </Helmet>
         )
     }

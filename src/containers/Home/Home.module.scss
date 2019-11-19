@@ -122,6 +122,120 @@
         position: relative;
         top: 4px;
     }
+
+
+    .content{
+      margin: 0 auto;
+      padding: 3rem 0 1rem;
+      background:#fff;
+
+      @at-root .announcement_wrapper {
+        width:40rem;
+        margin:0 auto;
+        border:1px dashed #e6e6e6;
+        color: #969696;
+        padding:1rem;
+        border-radius: 10px;
+        font-size:0.8rem;
+        background:#fbfbfb;
+      }
+
+      @at-root .new_release_container{
+        display: flex;
+        justify-content: space-around;
+        width:40rem;
+        margin:0 auto;
+
+        .new_release {
+          overflow:hidden;
+          box-shadow:1px 1px 3px rgba(0,0,0,0.3);
+          border-radius: 10px;
+
+          @at-root .new_release_content {
+            position: relative;
+            width: 13rem;
+            height: 8rem;
+            background: no-repeat center top;
+            background-size: cover;
+            transition: all 400ms linear;
+  
+            &:hover {
+              .overlay {
+                visibility: visible;
+                opacity: 1;
+                transition: all 400ms linear;
+              }
+            }
+  
+            &:hover::before {
+              left: 50%;
+              width: 100%;
+              text-align: center;
+              transform: translate3d(-50%, -50%, 0);
+            }
+  
+            &:hover::after {
+              left: 0;
+            }
+  
+            &::after {
+              position: absolute;
+              content: attr(data-title);
+              left: 13rem;
+              background: #000;
+              color: #fff;
+              width: 100%;
+              margin-top: 1.4rem;
+              padding: 0.5rem 0;
+              text-align: center;
+              font-size: 0.9rem;
+              transition: all 400ms linear;
+            }
+  
+            &::before {
+              width: 100%;
+              position: absolute;
+              content: attr(data-intro);
+              bottom: 1rem;
+              left: -50%;
+              transform: translate3d(-50%, -50%, 0);
+              color: #bbb;
+              font-size: 0.6rem;
+              font-style: italic;
+              letter-spacing: 1px;
+              z-index: 2;
+              transition: all 400ms linear;
+            }
+
+            .overlay {
+              visibility: hidden;
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+              background: rgba(#000, 0.6);
+              transition: all 400ms linear;
+            }
+          }
+        }
+      }
+    }
+
+
+    .blog_summary_tips,
+    .new_release_tips {
+      color: #666;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px dashed #ececec;
+      width: 40rem;
+      margin: 4rem auto 2rem;
+    }
+
 }
 .up_triangle {
     position: absolute;

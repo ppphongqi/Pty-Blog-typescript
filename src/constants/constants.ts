@@ -60,3 +60,8 @@ export const svgSprite = {
     close: '#close',
   };
   
+
+export const api = {
+  prod:'https://....',
+  dev:'127.0.0.1:3000/api',
+};
